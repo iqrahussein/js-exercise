@@ -2,9 +2,9 @@
 function fetchUserdata(){
   return new Promise((resolve,rejact)=>{
     setTimeout(() => {
-      const user =true;
+      const user =false;
       if(user){
-        resolve({id:222,name:"cabdi"})
+        resolve({id:222,name:"hassan"})
       }else{
         rejact("failed to fetch user data")
       }
@@ -18,8 +18,13 @@ function fetchUserdata(){
 // .catch((err)=>console.log(err))
 
 async function displayUserdata() {
-    const user= await fetchUserdata();
+  try{
+   const user= await fetchUserdata();
     console.log("user data",user)
+  } catch(err){
+    console.log(err)
+  }
+ 
 }
 
 displayUserdata();
