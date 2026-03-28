@@ -6,3 +6,13 @@ function addElement(){
 
   list.appendChild(newelement)
 }
+
+function removeElement(){
+  if(list.lastChild){
+   list.removeChild(list.lastChild)
+  }
+
+  else{
+    alert("list is ended")
+  }
+}
