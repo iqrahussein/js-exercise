@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #colorprev{
+    margin-top:30px ;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+  }
+  
+</style>
+<body>
+  <h1>Interactive Color Picker</h1>
+
+  <label for="color picker">Choose a color:</label>
+  <input type="color" id="color">
+
+  <div id="colorprev">
+   <h3>Color Preview</h3>
+  </div>
+
+  <h2>Color History</h2>
+  <li id="colorHistory">
+
+  </li>
+
+  <button id="removeHistory" onclick="removeHistory2()">Remove History</button>
+  <script src="colorPicker.js"></script>
+</body>
+</html>
