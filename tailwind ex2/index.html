@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  </head>
+  <body>
+    <div class="grid grid-cols-3">
+      <div class="bg-[#89CFF0] col-span-3 text-black p-4">
+        feature content
+        <p>takes all column</p>
+      </div>
+      <div class="bg-[#7393B3] col-span-2 p-4">
+        Left sectin
+        <p>takes up 2 column</p>
+      </div>
+      <div  class="bg-[#FFFFCC] col-span-1 p-4">Right column takes 1 column</div>
+      <div class="bg-[#CCCCFF] p-4">Column 1</div>
+      <div class="bg-[#00A36C] p-4">Column 1</div>
+      <div class="bg-[#7DF9FF] p-4">Column 1</div>
+    </div>
+  </body>
+</html>
